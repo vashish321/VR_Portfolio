@@ -3,16 +3,7 @@ body{
     padding: 0px;
 }
 
-header{
-    background: url(../image/2.jpg) no-repeat center center / cover;
-    height: 100vh;
-    /* min-height: 100px; */
-    width: 100%;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-flow: column; */
-}
+
 
 .navbar{
 	
@@ -112,6 +103,23 @@ header{
 	transform: translate(-50%, 0%); 
 
 	/* border: 1px solid black; */
+	z-index:3;
+}
+
+.title-text a{
+	
+	text-decoration:none;
+	color:white;
+	
+	transition:all 0.5s;
+}
+
+.title-text a:hover{
+	
+	text-decoration:none;
+	color:#00F7FF;
+	
+	transition:all 0.5s;
 }
 
 .menu-nav{

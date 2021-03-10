@@ -9,7 +9,7 @@
 	right:15%;
 	
 	/* border: 1px solid lime; */
-	background:rgba(100, 100, 100, 0.5);
+	background:rgba(100, 100, 100, 0.1);
 	backdrop-filter:blur(6px);
 	/* width:auto; */
 	/* overflow:hidden; */
@@ -32,6 +32,14 @@
 	
 	background:#3399FE;
 	
+	display:flex;
+	justify-content: center;
+    align-items: center;
+	
+	font-size:30px;
+	font-weight:800;
+	
+	background: url(../image/logo.jpg) no-repeat center center / cover;
 }
 
 .temparature{
@@ -343,7 +351,12 @@
 .slider-bar .slider-panel .image-holder .image-1{
 	
 	background: url(../image/1.jpg) no-repeat center center / cover;
-	
+	/* background-image: url("../image/1.jpg"); */
+
+	/* background-position: center; */
+	/* background-repeat: no-repeat; */
+	/* background-size: cover; */
+
 }
 
 .slider-bar .slider-panel .image-holder .image-2{
@@ -361,7 +374,7 @@
 
 .slider-bar .slider-panel .image-holder .image-4{
 	
-	background: url(../image/4.jpg) no-repeat center center / cover;
+	background: url(../image/5.jpg) no-repeat center center / cover;
 }
 
 /* part 4 scroll bar panel start............................... */
@@ -442,7 +455,16 @@
 
 
 
-
+.slider-bar .slider-panel .image-holder a{
+	/* border:1px solid red; */
+	position:absolute;
+	height:100%;
+	width:100%;
+	z-index:5;
+	
+	border-radius:6px;
+	
+}
 
 
 

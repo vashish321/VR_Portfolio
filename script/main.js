@@ -12,6 +12,11 @@ var slider_counter;
 var up_arrow = document.getElementById("up_arrow");
 var down_arrow = document.getElementById("down_arrow");
 
+var copy_to_clip_button = document.getElementById("copy_to_clip");
+
+var own_t=100;
+var not_own_t=600;
+
 first_call();
 
 function first_call()
@@ -61,6 +66,16 @@ document.getElementById("image_1").addEventListener("click", function() {
   // document.getElementById("demo").innerHTML = "Hello World";
   
   // console.log("hello");
+	if(slider_counter == 1){
+		// setTimeout(go_to_showcase(image_1), 100);
+		setTimeout(function() {go_to_showcase(image_1);}, own_t)
+		
+	}
+	else{
+		// setTimeout(go_to_showcase(image_1), 700);
+		setTimeout(function() {go_to_showcase(image_1);}, not_own_t)
+	}
+  
   
 	image_1.setAttribute("style", "transform: scale(1.2)")
 	image_2.setAttribute("style", "transform: scale(1)")
@@ -74,12 +89,24 @@ document.getElementById("image_1").addEventListener("click", function() {
 	slider_counter = 1;
 	
 	arrow_alpha_controll();
+	
+	
+	
+	
+	
 });
 
 document.getElementById("image_2").addEventListener("click", function() {
   // document.getElementById("demo").innerHTML = "Hello World";
   
   // console.log("hello");
+	if(slider_counter == 2){
+		setTimeout(function() {go_to_showcase(image_2);}, own_t)
+	}
+	else{
+		setTimeout(function() {go_to_showcase(image_2);}, not_own_t)
+	}
+  
   
 	image_1.setAttribute("style", "transform: scale(1)")
 	image_2.setAttribute("style", "transform: scale(1.2)")
@@ -93,12 +120,21 @@ document.getElementById("image_2").addEventListener("click", function() {
 	slider_counter = 2;
 	
 	arrow_alpha_controll();
+	
+	
 });
 
 document.getElementById("image_3").addEventListener("click", function() {
   // document.getElementById("demo").innerHTML = "Hello World";
   
   // console.log("hello");
+  
+	if(slider_counter == 3){
+		setTimeout(function() {go_to_showcase(image_3);}, own_t)
+	}
+	else{
+		setTimeout(function() {go_to_showcase(image_3);}, not_own_t)
+	}
   
 	image_1.setAttribute("style", "transform: scale(1)")
 	image_2.setAttribute("style", "transform: scale(1)")
@@ -112,6 +148,9 @@ document.getElementById("image_3").addEventListener("click", function() {
 	slider_counter = 3;
 	
 	arrow_alpha_controll();
+	
+	// setTimeout(go_to_showcase, 600);
+	// go_to_showcase();
 });
 
 
@@ -119,6 +158,14 @@ document.getElementById("image_4").addEventListener("click", function() {
   // document.getElementById("demo").innerHTML = "Hello World";
   
   // console.log("hello");
+	if(slider_counter == 4){
+		setTimeout(function() {go_to_showcase(image_4);}, own_t)
+	}
+	else{
+		setTimeout(function() {go_to_showcase(image_4);}, not_own_t)
+	}
+  
+  
   
 	image_1.setAttribute("style", "transform: scale(1)")
 	image_2.setAttribute("style", "transform: scale(1)")
@@ -132,6 +179,9 @@ document.getElementById("image_4").addEventListener("click", function() {
 	slider_counter = 4;
 	
 	arrow_alpha_controll();
+	
+	// setTimeout(go_to_showcase, 600);
+	// go_to_showcase();
 });
 
 
@@ -335,13 +385,64 @@ document.getElementById("down_arrow").addEventListener("click", function() {
 
 
 
+copy_to_clip_button.addEventListener("click", function() {
+  
+	// console.log('ok');
+	// var copyText = document.getElementById("myInput");
+	// var copyText = document.URL;
+	// var copyText = window.location.href;
+	// console.log(copyText);
+	// copyText.select();
+	// copyText.setSelectionRange(0, 99999); 
 
+	// document.execCommand("copy");
 
+	// alert("Copied the text: " + copyText.value);
+	
+	
+	
+	// var dummy = document.createElement('input'),
+    // text = window.location.href;
 
+	var page_link = document.createElement('input'),
+		text = window.location.href;
 
+	document.body.appendChild(page_link);
+	page_link.value = text;
+	page_link.select();
+	document.execCommand('copy');
+	document.body.removeChild(page_link);
+	
+	swal({
+	  title: "Link Copied!",
+	  text: "Link copied to clipboard",
+	  icon: "success",
+	  // button: "Okay",
+	  // showConfirmButton: false,
+	  timer: 1000
+	});
+  
+});
 
+//image clicking to go to page........................showcase...............
 
-
+function go_to_showcase(img_hol)
+{	
+	
+	const style = window.getComputedStyle(img_hol);
+	const image = style.backgroundImage;
+	const url= image.slice(75,-2);
+	
+	var img_title = img_hol.getAttribute('value');
+	console.log(img_title);
+	
+	localStorage.setItem("imgtitle", img_title);
+	localStorage.setItem("imageurl", url);
+	localStorage.setItem("slider_counter", slider_counter);
+	
+	window.location.href="showcase.html";
+	
+}
 
 
 

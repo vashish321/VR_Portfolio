@@ -1,0 +1,164 @@
+header{
+    /* background: url(../image/10.jpg) no-repeat center center / cover; */
+    height: 100%;
+    /* min-height: 100px; */
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-flow: column; */
+	
+	background: linear-gradient(to bottom, #000066 0%, #800000 100%);
+	
+	/* position:absolute; */
+	/* border:1px solid lime; */
+}
+
+.project-title{
+	position:relative;
+	width:70%;
+	margin-left:15%;
+	margin-top:5%;
+	color:white;
+	display:flex;
+	/* border:1px solid lime; */
+	font-size:25px;
+	font-weight:800;
+	/* text-align:center; */
+	/* justify-content:center; */
+}
+
+
+
+.Item-holder{
+	
+	position:relative;
+	width:70%;
+	margin-left:15%;
+	margin-top:3%;
+	/* bottom:0; */
+	height:40vh;
+	/* border:1px solid lime; */
+	/* color:white; */
+	display: flex;
+	/* bottom:20%; */
+	
+	
+	margin-bottom:2%;
+}
+
+
+.item:nth-child(1n){
+	
+	transition:all 0.5s;
+	
+}
+.item:nth-child(1n):hover{
+	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+	transform:Scale(1.1);
+	
+	transition:all 0.5s;
+}
+
+
+.item:nth-child(2n+1){
+	
+	position:absolute;
+	/* border:2px solid aqua; */
+	width:40%;
+	height:100%;
+	/* float:right; */
+	
+	/* margin-left:100px; */
+	border-radius:5px;
+	
+	
+	
+}
+
+
+.item:nth-child(2n){
+	
+	position:absolute;
+	/* border:2px solid red; */
+	width:40%;
+	height:100%;
+	/* float:right; */
+	right:0%;
+	border-radius:5px;
+	
+}
+
+.item a{
+	
+	/* border:1px solid red; */
+	height:100%;
+	width:100%;
+	position:absolute;
+	border-radius:5px;
+}
+
+
+
+.item-1{
+	
+	background: url(../image/pdf1.jpg) no-repeat center center / cover;
+}
+.item-2{
+	
+	background: url(../image/pdf2.jpg) no-repeat center center / cover;
+}
+.item-3{
+	
+	background: url(../image/pdf3.png) no-repeat center center / cover;
+}
+.item-4{
+	
+	background: url(../image/pdf4.jpg) no-repeat center center / cover;
+}
+.item-5{
+	
+	background: url(../image/pdf5.jpg) no-repeat center center / cover;
+}
+.item-6{
+	
+	background: url(../image/pdf6.jpg) no-repeat center center / cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

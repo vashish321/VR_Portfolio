@@ -1,0 +1,10 @@
+header{
+    background: url(../image/10.jpg) no-repeat center center / cover;
+    height: 100vh;
+    /* min-height: 100px; */
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-flow: column; */
+}
