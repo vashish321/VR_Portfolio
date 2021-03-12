@@ -448,7 +448,3 @@ function go_to_showcase(img_hol)
 
 
 
-
-
-
-

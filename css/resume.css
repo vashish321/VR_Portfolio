@@ -1,6 +1,6 @@
 header{
     /* background: url(../image/10.jpg) no-repeat center center / cover; */
-    height: 100vh;
+    min-height: 100vh;
     /* min-height: 100px; */
     width: 100%;
     /* display: flex; */
@@ -42,7 +42,7 @@ header{
     /* justify-content: center; */
 	
 	
-	background: url(../image/6.jpg) no-repeat center center / cover;
+	background: url(../image/resumepage.png) no-repeat center center / cover;
 	
 }
 

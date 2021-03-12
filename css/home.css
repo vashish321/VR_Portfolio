@@ -1,5 +1,5 @@
 header{
-    background: url(../image/10.jpg) no-repeat center center / cover;
+    background: url(../image/homepage.jpg) no-repeat center center / cover;
     height: 100vh;
     /* min-height: 100px; */
     width: 100%;
@@ -7,4 +7,18 @@ header{
     /* justify-content: center; */
     /* align-items: center; */
     /* flex-flow: column; */
+}
+
+.copy-right{
+	position:absolute;
+	/* border:1px solid red; */
+	background:rgba(100, 100, 100, 0.1);
+	backdrop-filter:blur(6px);
+	/* margin-left:5px; */
+	margin-bottom:5px;
+	bottom:0;
+	left:0;
+	color:white;
+	font-size:13px;
+	padding:0px 10px;
 }

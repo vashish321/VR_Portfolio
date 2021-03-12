@@ -32,18 +32,26 @@ function first_call()
 	if(slider_counter == 1)
 	{
 		project_des.innerHTML = "this is "+img_title;
+		
+		document.getElementById("set_pdf").src = "pdf/1.pdf";
 	}
 	else if(slider_counter == 2)
 	{
 		project_des.innerHTML = "this is "+img_title;
+		
+		document.getElementById("set_pdf").src = "pdf/2.pdf";
 	}
 	else if(slider_counter == 3)
 	{
 		project_des.innerHTML = "this is "+img_title;
+		
+		document.getElementById("set_pdf").src = "pdf/3.pdf";
 	}
 	else if(slider_counter == 4)
 	{
 		project_des.innerHTML = "this is "+img_title;
+		
+		document.getElementById("set_pdf").src = "pdf/4.pdf";
 	}
 	
 	

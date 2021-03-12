@@ -48,12 +48,13 @@ header{
 }
 
 
-.item:nth-child(1n){
+.item{
 	
 	transition:all 0.5s;
-	
+	display:flex;
+	justify-content:center;
 }
-.item:nth-child(1n):hover{
+.item:hover{
 	
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 	transform:Scale(1.1);
@@ -99,32 +100,40 @@ header{
 	border-radius:5px;
 }
 
+.item .project-name{
+	
+	font-size:20px;
+	font-weight:700;
+	color:white;
+	/* border:1px solid red; */
+	text-align:center;
+	/* backdrop-filter:blur(6px); */
+	position:absolute;
+	background-color:black;
+	
+	padding:3px 10px;
+	border-radius:4px;
+}
+
 
 
 .item-1{
 	
-	background: url(../image/pdf1.jpg) no-repeat center center / cover;
+	background: url(../image/1.jpg) no-repeat center center / cover;
 }
 .item-2{
 	
-	background: url(../image/pdf2.jpg) no-repeat center center / cover;
+	background: url(../image/2.jpg) no-repeat center center / cover;
 }
 .item-3{
 	
-	background: url(../image/pdf3.png) no-repeat center center / cover;
+	background: url(../image/3.jpg) no-repeat center center / cover;
 }
 .item-4{
 	
-	background: url(../image/pdf4.jpg) no-repeat center center / cover;
+	background: url(../image/4.jpg) no-repeat center center / cover;
 }
-.item-5{
-	
-	background: url(../image/pdf5.jpg) no-repeat center center / cover;
-}
-.item-6{
-	
-	background: url(../image/pdf6.jpg) no-repeat center center / cover;
-}
+
 
 
 

@@ -229,8 +229,19 @@
 	
 	
 	overflow:hidden;
-	/* overflow-y: scroll; */
+	overflow-y: scroll;
+	
+	/* overflow: auto; */
+	/* this will hide the scrollbar in mozilla based browsers */
+	/* overflow: -moz-scrollbars-none; */
+	/* this will hide the scrollbar in internet explorers */
+	/* -ms-overflow-style: none; */
 }
+
+.slider-bar .slider-panel::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 
 .slider-bar .slider-panel .image-holder{
 	
@@ -244,6 +255,8 @@
 	
 	transition:all 0.5s;
 	transform:translate(0%,-30%);
+	/* overflow-y: scroll; */
+	/* z-index:3; */
 }
 
 .slider-bar .slider-panel .image-holder .image-box{
@@ -260,6 +273,8 @@
 	display:flex;
 	
 	transition:all .5s;
+	
+	/* overflow-y: scroll; */
 }
 
 .slider-bar .slider-panel .image-holder .image-box:hover{
@@ -374,7 +389,7 @@
 
 .slider-bar .slider-panel .image-holder .image-4{
 	
-	background: url(../image/5.jpg) no-repeat center center / cover;
+	background: url(../image/4.jpg) no-repeat center center / cover;
 }
 
 /* part 4 scroll bar panel start............................... */
