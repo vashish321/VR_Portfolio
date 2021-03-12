@@ -27,6 +27,9 @@
 	
 	background:rgba(100, 100, 100, 0.2);
 	backdrop-filter:blur(6px);
+	
+	opacity:0;
+	transition:all 5s;
 }
 
 .description-bar .tittle-plate{
@@ -40,6 +43,8 @@
 	
 	font-size:600%;
 	font-weight:900;
+	
+	
 }
 
 .description-bar .description-plate{

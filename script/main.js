@@ -17,6 +17,8 @@ var copy_to_clip_button = document.getElementById("copy_to_clip");
 var own_t=100;
 var not_own_t=600;
 
+var description_bar = document.getElementById("description_bar");
+
 first_call();
 
 function first_call()
@@ -33,6 +35,8 @@ function first_call()
 	
 	slider_counter = 1;
 	arrow_alpha_controll();
+	
+	description_bar.setAttribute("style", "opacity:1")
 }
 
 
