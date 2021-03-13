@@ -10,6 +10,8 @@ header{
 	
 	
 	background: linear-gradient(to top right, #800000 0%, #000099 100%);
+	
+	
 }
 
 .description-holder{
@@ -19,7 +21,7 @@ header{
 	height:100%;
 	/* border:1px solid aqua; */
 	color:white;
-	
+	overflow:hidden;
 	/* bottom:20%; */
 }
 
@@ -47,6 +49,11 @@ header{
 	
 	font-size:600%;
 	font-weight:900;
+	
+	transform: Scale(0.1);
+	transition: all 2s;
+	
+	/* border:1px solid red; */
 }
 
 .description-bar .description-plate{
@@ -60,6 +67,10 @@ header{
 	
 	font-size:100%;
 	font-weight:500;
+	
+	transform:translate(0%,300%);
+	
+	transition:all 2s;
 }
 
 .description-bar .extra-plate{
@@ -178,6 +189,11 @@ header{
 	background: url(../image/about.jpg) no-repeat center center / cover;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
+	
+	
+	transform:translate(200%,0%);
+	transition:all 2s;
+	
 }
 
 

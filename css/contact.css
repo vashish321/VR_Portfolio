@@ -1,5 +1,10 @@
+body{
+	
+	overflow:hidden;
+}
+
 header{
-    background: url(../image/contact.jpeg) no-repeat center center / cover;
+    /* background: url(../image/contact.jpeg) no-repeat center center / cover; */
     height: 100vh;
     /* min-height: 100px; */
     width: 100%;
@@ -7,6 +12,21 @@ header{
     /* justify-content: center; */
     /* align-items: center; */
     /* flex-flow: column; */
+	
+	overflow:hidden;
+}
+
+.moving_back{
+	position:absolute;
+	/* border:1px solid aqua; */
+	height:100%;
+	width:100%;
+	background: url(../image/contact.jpeg) no-repeat center center / cover;
+	/* background:red; */
+	
+	transform:Scale(1);
+	transition:all 10s;
+	
 }
 
 .description-holder{

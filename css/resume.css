@@ -8,7 +8,7 @@ header{
     /* align-items: center; */
     /* flex-flow: column; */
 	
-	background: #1B231D;
+	background: red;
 	/* background: linear-gradient(to top right, #660066 0%, #800000 100%); */
 	
 	/* position:absolute; */
@@ -157,7 +157,9 @@ header{
 	/* margin-top:55px; */
     /* justify-content: center; */
 	display:flex;
-	background:#101311;
+	/* background:#101311; */
+	
+	background: linear-gradient(to bottom right, #906060 0%, #000030 100%);
 	/* background: url(../image/resume.png) no-repeat center center / cover; */
 	
 }

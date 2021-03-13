@@ -55,8 +55,6 @@ function first_call()
 	}
 	
 	
-	
-	
 }
 
 
