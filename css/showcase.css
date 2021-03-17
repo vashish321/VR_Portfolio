@@ -87,6 +87,7 @@ header{
 
 .pdf-holder{
 	min-height:400px;
+	/* min-width:300px; */
 	/* border:1px solid aqua; */
 }
 
