@@ -23,14 +23,14 @@ first_call();
 
 function first_call()
 {
-	image_1.setAttribute("style", "transform: scale(1.2)")
-	image_2.setAttribute("style", "transform: scale(1)")
-	image_3.setAttribute("style", "transform: scale(1)")
-	image_4.setAttribute("style", "transform: scale(1)")
+	// image_1.setAttribute("style", "transform: scale(1.2)")
+	// image_2.setAttribute("style", "transform: scale(1)")
+	// image_3.setAttribute("style", "transform: scale(1)")
+	// image_4.setAttribute("style", "transform: scale(1)")
 	
 	image_holder.setAttribute("style", "transform:translate(0%,-30%)")
 	scroller.setAttribute("style", "transform:translate(0%,0%)")
-	document.getElementById('slide_button_1').checked = true
+	// document.getElementById('slide_button_1').checked = true
 	
 	
 	slider_counter = 1;
@@ -439,6 +439,8 @@ function go_to_showcase(img_hol)
 	
 	var img_title = img_hol.getAttribute('value');
 	console.log(img_title);
+	console.log(url);
+	console.log(slider_counter);
 	
 	localStorage.setItem("imgtitle", img_title);
 	localStorage.setItem("imageurl", url);
@@ -447,6 +449,84 @@ function go_to_showcase(img_hol)
 	window.location.href="showcase.html";
 	
 }
+
+
+
+
+// ............... nav bar menu 
+var menu_nav = document.getElementById("menu_nav");
+var navbar_2 = document.getElementById("navbar_2");
+
+menu_nav.addEventListener("click", function() {
+  
+	const style = window.getComputedStyle(navbar_2);
+	const nav_display = style.display;
+	// console.log(displays);
+	
+	if(nav_display == "none"){
+		navbar_2.setAttribute("style", "display:flex");
+		// console.log("ok");
+	}
+	else{
+		
+		navbar_2.setAttribute("style", "display:none");
+		// console.log("ok");
+	}
+});
+// ............... nav bar menu 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

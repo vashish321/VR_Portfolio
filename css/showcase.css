@@ -56,7 +56,7 @@ header{
 	height:400px;
 	/* height:500px; */
 	/* margin-left:10px; */
-	background: url(../image/6.jpg) no-repeat center center / cover;
+	background: url(../image/1.jpg) no-repeat center center / cover;
 	/* border:1px solid red; */
 }
 
@@ -86,7 +86,7 @@ header{
 }
 
 .pdf-holder{
-	/* height:400px; */
+	min-height:400px;
 	/* border:1px solid aqua; */
 }
 
