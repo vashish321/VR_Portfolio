@@ -26,53 +26,48 @@ setTimeout(first_call, 10);
 
 // first_call();
 
+
+
 function first_call()
 {
-	
 	// image_holder.setAttribute("style", new_image_url);
 	// project_title.innerHTML = img_title;
-	
-	
+
 	if(slider_counter == 1)
 	{
-		
 		image_holder.setAttribute("style", "background: url(image/1.jpg) no-repeat center center / cover;");
-		project_title.innerHTML = "Charles Street Video";
-		project_des.innerHTML = "This website was aimed to redesign the website of an organisation whose cause was charitable. This project included the redesign of the website and mobile versions of the website and ensuring it was appealing to all the present and future stakeholders of the organization. Prototyping included using paper wireframes and adding clickable functions to them in order to iterate possible solutions to the problem. Hi-level iterations of prototypes included using figma and high level graphics to animate the webiste and deeply disseminate the functionality of the website and mobile application.";
+		project_title.innerHTML = "Charles Street Video Case Study";
+		project_des.innerHTML = "This website is a case study for a charitable organization where we analyzed the elements of UX UI Design which can be used to improve website traffic and interaction. It included the creation of desktop and mobile versions of the website, ensuring it was appealing to all the present and future stakeholders of the organization. Prototyping included using paper wireframes and adding clickable functions to them in order to iterate possible solutions to the problem. Hi-level iterations of prototypes included using figma and high level graphics to animate the webiste and deeply disseminate the functionality of the website and mobile application. In the Figma link provided, the Development Processes to ideate solutions included User Personas, Empathy Maps and Feature prioritization to decide on main features. User interviews and Heuristic evaluations were some client exercises to determine the needs and pain points of the stakeholders. My role included interviewing the clients as potential users of the website; as well as delegating duties to the team for the completion of the project. The re-design of this website took 4 weeks.";
 		document.getElementById("set_pdf").src = "pdf/1.pdf";
-		
+		document.getElementById("down_link").href = "https://drive.google.com/file/d/1OHorSB-zqRyDza_kgi-589SUC9zFZmO0/view?usp=sharing";
+		document.getElementById("figma_link").href = "https://www.figma.com/file/c34PT2oI6vtWgzEW9g9HxZ/Charles-Street-Video-Re-design";
 	}
 	else if(slider_counter == 2)
 	{
 		image_holder.setAttribute("style", "background: url(image/2.jpg) no-repeat center center / cover;");
-		project_title.innerHTML = "Genius Create";
+		project_title.innerHTML = "Genius Create MTV";
 		project_des.innerHTML = "This project included the design of the features of the app as well as the onboarding process demonstrated using Figma. The user research was a structured approach where the user persona was developed and the key characteristics to developing the needs and pain points of the user were defined. In conclusion, only the mobile version of the app was developed and the project was a success in detailing its main features. Further iterations of this design would include more user research to target the key demographics as well as a website further of the application.";
 		document.getElementById("set_pdf").src = "pdf/2.pdf";
-		
-		
-		// project_des.innerHTML = "this is "+img_title;
-		// document.getElementById("set_pdf").src = "pdf/2.pdf";
+		document.getElementById("down_link").href = "https://drive.google.com/file/d/1gYw1QU4boOUGlUguSabRTYtxh76OBr-l/view?usp=sharing";
+		document.getElementById("figma_link").href = "https://www.figma.com/file/ThgRCaiKdB5gcnLv53LZsv/MTV-Deliverables-Design";
 	}
 	else if(slider_counter == 3)
 	{
-		
 		image_holder.setAttribute("style", "background: url(image/3.jpg) no-repeat center center / cover;");
-		project_title.innerHTML = "Item3";
-		project_des.innerHTML = "this is item3";
+		project_title.innerHTML = "Secretsauce Group Design";
+		project_des.innerHTML = "This project included the design of the features of the app as well as the onboarding process demonstrated using Figma. The user research was a structured approach where the user persona was developed and the key characteristics to developing the needs and pain points of the user were defined. In conclusion, only the mobile version of the app was developed and the project was a success in detailing its main features. Further iterations of this design would include more user research to target the key demographics as well as a website further of the application.";
 		document.getElementById("set_pdf").src = "pdf/3.pdf";
-		
-		
-		// project_des.innerHTML = "this is "+img_title;
-		// document.getElementById("set_pdf").src = "pdf/3.pdf";
+		document.getElementById("down_link").href = "pdf/4.pdf";
+		document.getElementById("figma_link").href = "https://www.figma.com/file/ViLux4zSU5UME2p6PUZzeu/SecretSauce-Design";
 	}
 	else if(slider_counter == 4)
 	{
-		
 		image_holder.setAttribute("style", "background: url(image/4.jpg) no-repeat center center / cover;");
-		project_title.innerHTML = "First UX UI Portfolio";
-		project_des.innerHTML = "This is a simple presentation featuring one of my first UX UI Portfolios. It can be used in lieu of going through this entire website.";
+		project_title.innerHTML = "My First Individual Project";
+		project_des.innerHTML = "This is a simple presentation featuring one of my first UX UI Projects. It was based on an app of my choosing where I used iterative processes along with the teachings of what we learned so far in the UX UI Deisgn course to deisgn a clickable prototype of the app in FIgma.";
 		document.getElementById("set_pdf").src = "pdf/4.pdf";
-		
+		document.getElementById("down_link").href = "https://drive.google.com/file/d/1GW7k8YDmnOfkDVLUdVR3_SENquV15kAr/view?usp=sharing";
+		document.getElementById("figma_link").href = "https://www.figma.com/files/project/9727840/Very-First-Project?fuid=848065108254760187";
 		
 		// project_des.innerHTML = "this is "+img_title;
 		// document.getElementById("set_pdf").src = "pdf/4.pdf";

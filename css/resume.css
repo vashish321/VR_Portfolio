@@ -58,44 +58,36 @@ header{
 	}
 
 
-	.laptop-image{
-		position:relative;
-		/* border:1px solid red; */
-		
-		width: 90%;
-		height:45%;
-		
-		margin-top:85px;
-		justify-content: center;
-		display:flex;
-		
-		margin-left:5%;
-		bottom:0;
-		background: url(../image/resume_laptop.png) no-repeat center center / 100% 100%;
-		
-		z-index:3;
-		
-		/* display:none; */
-	}
+.laptop-image {
+	position: relative;
+	/* border: 1px solid red; */
+	width: 96%;
+	height: 50%;
+	margin-top: 85px;
+	justify-content: center;
+	display: flex;
+	margin-left: 5%;
+	bottom: 0;
+	background: url(../image/resume_laptop.png) no-repeat center center / 100% 100%;
+	z-index: 3;
+	/* display: none; */
+	top: 25px;
+}
 
-	.laptop-image .laptop-screen{
-		position:absolute;
-		/* border:1px solid lime; */
-		width: 69%;
-		height:62%;
-		/* margin-top:55px; */
-		justify-content: center;
-		
-		/* right:0; */
-		margin-top:3%;
-		/* background: url(../image/1.jpg) no-repeat center center / 100% 100%; */
-		
-		
-		overflow:hidden;
-		overflow-y: scroll;
-		
-		
-	}
+.laptop-image .laptop-screen {
+	position: absolute;
+	/* border: 1px solid lime; */
+	width: 71%;
+	height: 62%;
+	/* margin-top: 55px; */
+	justify-content: center;
+	/* right: 0; */
+	margin-top: 3%;
+	/* background: url(../image/1.jpg) no-repeat center center / 100% 100%; */
+	overflow: hidden;
+	overflow-y: scroll;
+	margin-top: 22px;
+}
 
 	.laptop-image .laptop-screen::-webkit-scrollbar { 
 		display: none;  /* Safari and Chrome */

@@ -39,116 +39,6 @@ function first_call()
 	description_bar.setAttribute("style", "opacity:1")
 }
 
-var sld_time = setInterval(slider_show_timing, 4000);
-var sld_cnt = 1;
-
-function slider_show_timing() {
-
-	
-
-	if(sld_cnt == 1){
-		
-		slider_rotation = slider_rotation-60;
-		document.getElementById("img_area").setAttribute("style", "transform:rotateY("+slider_rotation+"deg)");
-		sld_cnt++;
-		
-		var img_taken = image_1.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_2.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_3.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_4.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		setTimeout(function() {
-			var img_taken = image_2.getElementsByTagName('img');
-			img_taken[0].setAttribute("style", "transform: scale(1.1)");
-
-		}, 1000)
-		
-	}
-	else if(sld_cnt == 2){
-		
-		slider_rotation = slider_rotation-60;
-		document.getElementById("img_area").setAttribute("style", "transform:rotateY("+slider_rotation+"deg)");
-		sld_cnt++;
-		
-		var img_taken = image_1.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_2.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_3.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_4.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		setTimeout(function() {
-			var img_taken = image_3.getElementsByTagName('img');
-			img_taken[0].setAttribute("style", "transform: scale(1.1)");
-		}, 1000)
-		
-	}
-	else if(sld_cnt == 3){
-		
-		slider_rotation = slider_rotation-60;
-		document.getElementById("img_area").setAttribute("style", "transform:rotateY("+slider_rotation+"deg)");
-		sld_cnt++;
-		
-		
-		var img_taken = image_1.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_2.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_3.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_4.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		setTimeout(function() {
-			var img_taken = image_4.getElementsByTagName('img');
-			img_taken[0].setAttribute("style", "transform: scale(1.1)");
-		}, 1000)
-		
-	}
-	else if(sld_cnt == 4){
-		
-		slider_rotation = slider_rotation-180;
-		document.getElementById("img_area").setAttribute("style", "transform:rotateY("+slider_rotation+"deg)");
-		sld_cnt = 1;
-		
-		var img_taken = image_1.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_2.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_3.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		var img_taken = image_4.getElementsByTagName('img');
-		img_taken[0].setAttribute("style", "transform: scale(1.0)");
-		
-		setTimeout(function() {
-			var img_taken = image_1.getElementsByTagName('img');
-			img_taken[0].setAttribute("style", "transform: scale(1.1)");
-		}, 1000)
-		
-	}
-	
-	console.log(slider_rotation);
-	
-}
-
 
 function arrow_alpha_controll(){
 	
@@ -222,10 +112,10 @@ function moveObject(event)
 	}
 
 	if(delta == 2){
-		// wrapper_Function(-10);
+		wrapper_Function(-10);
 	}
 	else if(delta == -2){
-		// wrapper_Function(10);
+		wrapper_Function(10);
 	}
 	
 
@@ -250,10 +140,10 @@ document.getElementById("image_1").addEventListener("click", function() {
 		setTimeout(function() {go_to_showcase(image_1);}, not_own_t)
 	}
 	
-	// if(slider_rotation != -360){
-		// slider_rotation=-360;
-		// document.getElementById("img_area").setAttribute("style", "transform:rotateY(-360deg)");
-	// }
+	if(slider_rotation != -360){
+		slider_rotation=-360;
+		document.getElementById("img_area").setAttribute("style", "transform:rotateY(-360deg)");
+	}
 	
 	var img_taken = image_1.getElementsByTagName('img');
 	img_taken[0].setAttribute("style", "transform: scale(1.1)");
@@ -272,10 +162,10 @@ document.getElementById("image_2").addEventListener("click", function() {
 		setTimeout(function() {go_to_showcase(image_2);}, not_own_t)
 	}
   
-	// if(slider_rotation != -420){
-		// slider_rotation=-420;
-		// document.getElementById("img_area").setAttribute("style", "transform:rotateY(-420deg)");
-	// }
+	if(slider_rotation != -420){
+		slider_rotation=-420;
+		document.getElementById("img_area").setAttribute("style", "transform:rotateY(-420deg)");
+	}
   
 	var img_taken = image_2.getElementsByTagName('img');
 	img_taken[0].setAttribute("style", "transform: scale(1.1)");
@@ -294,10 +184,10 @@ document.getElementById("image_3").addEventListener("click", function() {
 		setTimeout(function() {go_to_showcase(image_3);}, not_own_t)
 	}
 	
-	// if(slider_rotation != -480){
-		// slider_rotation=-480;
-		// document.getElementById("img_area").setAttribute("style", "transform:rotateY(-480deg)");
-	// }
+	if(slider_rotation != -480){
+		slider_rotation=-480;
+		document.getElementById("img_area").setAttribute("style", "transform:rotateY(-480deg)");
+	}
 	var img_taken = image_3.getElementsByTagName('img');
 	img_taken[0].setAttribute("style", "transform: scale(1.1)");
 });
@@ -313,10 +203,10 @@ document.getElementById("image_4").addEventListener("click", function() {
 		setTimeout(function() {go_to_showcase(image_4);}, not_own_t)
 	}
 	
-	// if(slider_rotation != -540){
-		// slider_rotation=-540;
-		// document.getElementById("img_area").setAttribute("style", "transform:rotateY(-540deg)");
-	// }
+	if(slider_rotation != -540){
+		slider_rotation=-540;
+		document.getElementById("img_area").setAttribute("style", "transform:rotateY(-540deg)");
+	}
 	var img_taken = image_4.getElementsByTagName('img');
 	img_taken[0].setAttribute("style", "transform: scale(1.1)");
 });

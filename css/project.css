@@ -31,7 +31,6 @@ header{
 
 
 
-
 .item a{
 	
 	/* border:1px solid red; */
@@ -41,21 +40,18 @@ header{
 	border-radius:5px;
 }
 
-.item .project-name{
-	
-	font-size:20px;
-	font-weight:700;
-	color:white;
-	/* border:1px solid red; */
-	text-align:center;
-	/* backdrop-filter:blur(6px); */
-	position:absolute;
-	background-color:black;
-	
-	padding:3px 10px;
-	border-radius:4px;
+.item .project-name {
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+	/* border: 1px solid red; */
+	text-align: center;
+	position: absolute;
+	background-color: black;
+	padding: 3px 10px;
+	border-radius: 4px;
+	cursor: pointer;
 }
-
 
 
 .item-1{
@@ -185,6 +181,7 @@ header{
 		/* right:0%; */
 		bottom:0%;
 	}
+
 	
 }
 

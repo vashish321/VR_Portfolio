@@ -35,7 +35,7 @@ body{
 	width:100%;
 	
 	display: flex;
-    justify-content: center;
+    justify-content: left; /*Before it was center - SAF*/
     align-items: center;
     /* flex-flow: column; */
 	/* border: 1px solid yellow; */
@@ -79,15 +79,17 @@ body{
 
 .title-text, .navbar .nav-only ul li a{
 	color:white;
-	
+	/*font-family: Brush Script MT, Brush Script Std, cursive; Change By Safeer Before it was nothign*/
+	text-align: center;
+
 	transition: color 0.5s;
 }
 
 
 
 .title-text{
-	
-	font-size:30px;
+	/* font-family: Brush Script MT, Brush Script Std, cursive; Change By Safeer Before it was nothign */
+	font-size:42px; /* Change By Safeer Before it was 32px*/
 	font-weight:900;
 	/* color:red; */
 	
@@ -114,6 +116,15 @@ body{
 	
 	transition:all 0.5s;
 }
+
+/* Media Query Added By Saf*/
+@media screen and (max-width: 600px) {
+	.title-text {
+	  font-size: 24px;
+	  /* font-family: 'Courier New', Courier, monospace; */
+	  /* text-align: left; */
+	}
+  }
 
 
 
@@ -414,7 +425,29 @@ body{
 		/* border: 1px solid red; */
 		display:none;
 	}
-	
+	.img-title {
+	position: absolute;
+	top: 93px;
+}
+.img-des {
+	position: absolute;
+	top: 146px;
+}
+.upper-half {
+	display: none;
+}
+.search-col-bar .lower-half {
+	top: 269px;
+	position: relative;
+}
+#image_holder img {
+	width: 543px;
+	height: 400px;
+}
+.image-holder img {
+	width: 543px;
+	height: 400px;
+}
 }
 
 
