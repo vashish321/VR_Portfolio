@@ -57,7 +57,7 @@ function first_call()
 		project_title.innerHTML = "Secretsauce Group Design";
 		project_des.innerHTML = "This project included the design of the features of the app as well as the onboarding process demonstrated using Figma. The user research was a structured approach where the user persona was developed and the key characteristics to developing the needs and pain points of the user were defined. In conclusion, only the mobile version of the app was developed and the project was a success in detailing its main features. Further iterations of this design would include more user research to target the key demographics as well as a website further of the application.";
 		document.getElementById("set_pdf").src = "pdf/3.pdf";
-		document.getElementById("down_link").href = "pdf/4.pdf";
+		document.getElementById("down_link").href = "https://drive.google.com/file/d/1aCwIdGuJmPc62sHXWHSxjaRWYRta4XL8/view?usp=sharing";
 		document.getElementById("figma_link").href = "https://www.figma.com/file/ViLux4zSU5UME2p6PUZzeu/SecretSauce-Design";
 	}
 	else if(slider_counter == 4)
