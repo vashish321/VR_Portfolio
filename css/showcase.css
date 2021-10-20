@@ -1,0 +1,307 @@
+header{
+    /* background: url(../image/10.jpg) no-repeat center center / cover; */
+    min-height: 100vh;
+    /* min-height: 100px; */
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-flow: column; */
+	
+	background: linear-gradient(to top right, #660066 0%, #800000 100%);
+	
+	/* position:absolute; */
+	/* border:1px solid lime; */
+	/* margin-bottom:200px; */
+}
+
+
+.button-holder{
+	position:relative;
+	/* border:1px solid lime; */
+	/* width:100%; */
+	/* display: flex; */
+	/* right:0%; */
+	z-index:3;
+}
+
+
+
+
+.col-lg-6 {
+	/* position:relative; */
+	margin-top:15px;
+	
+	/* display:flex; */
+	/* border:1px solid red; */
+	/* right:0%; */
+	
+	/* justify-content:center; */
+	
+	
+	/* height:500px; */
+}
+
+.con-holder{
+	/* position:relative; */
+	/* border:1px solid lime; */
+	/* height:1000px; */
+}
+
+.con-holder .image-holder{
+	position:relative;
+	/* min-height:300px; */
+	/* max-height:500px; */
+	/* width:100%; */
+	height:400px;
+	/* height:500px; */
+	/* margin-left:10px; */
+	/* border:1px solid red; */
+}
+
+.con-holder .title-holder {
+	/* position: absolute; */
+	font-size: 30px;
+	display: flex;
+	/* border: 1px solid aqua; */
+	width: 100%;
+	/* height: 20px; */
+	justify-content: center;
+	font-weight: 800;
+	color: white;
+	margin-top: 11px;
+	margin-bottom: 18px;
+}
+.con-holder .des-holder {
+	/* position: absolute; */
+	/* font-size: 30px; */
+	display: flex;
+	/* border: 1px solid aqua; */
+	width: 100%;
+	/* height: 20px; */
+	justify-content: center;
+	font-weight: 800;
+	color: white;
+	padding-bottom: 200px;
+}
+.pdf-holder{
+	min-height:400px;
+	/* min-width:300px; */
+	/* border:1px solid aqua; */
+}
+
+
+@media only screen and (min-width: 0px) {
+	
+	.button-holder{
+		position:absolute;
+		/* border:1px solid lime; */
+		/* width:100%; */
+		/* display: flex; */
+		right:0%;
+		z-index:3;
+		
+		margin-right:5px;
+		
+		font-size:10px;
+	}
+
+	.button-holder .btn {
+		/* position:absolute; */
+		font-size:7px;
+		/* font-size:10px; */
+		/* border:1px solid red; */
+		/* right:0%; */
+	}
+	
+	.pdf-holder p{
+		display:block;
+	}
+}
+
+@media only screen and (min-width: 450px) {
+	
+	.button-holder{
+		position:absolute;
+		/* border:1px solid lime; */
+		/* width:100%; */
+		/* display: flex; */
+		right:0%;
+		z-index:3;
+		
+		margin-right:10px;
+	}
+
+	.button-holder .btn {
+		/* position:absolute; */
+		
+		font-size:10px;
+		/* border:1px solid red; */
+		/* right:0%; */
+	}
+	.pdf-holder p{
+		display:block;
+	}
+
+}
+
+
+@media only screen and (min-width: 750px) {
+	
+	.button-holder{
+		position:absolute;
+		/* border:1px solid lime; */
+		/* width:100%; */
+		/* display: flex; */
+		right:0%;
+		z-index:3;
+		
+		margin-right:10px;
+	}
+
+	.button-holder .btn {
+		/* position:absolute; */
+		font-size:15px;
+		
+		/* border:1px solid red; */
+		/* right:0%; */
+	}
+	.pdf-holder p{
+		display:block;
+	}
+
+}
+
+
+@media only screen and (min-width: 950px) {
+	
+		
+	.button-holder{
+		position:absolute;
+		/* border:1px solid lime; */
+		/* width:100%; */
+		/* display: flex; */
+		right:0%;
+		z-index:3;
+		
+		margin-right:10px;
+	}
+
+	.button-holder .btn {
+		/* position:absolute; */
+		font-size:20px;
+		
+		/* border:1px solid red; */
+		/* right:0%; */
+	}
+
+	.pdf-holder p{
+		display:none;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
